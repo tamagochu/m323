@@ -1,0 +1,14 @@
+class TipCalculator { 
+
+   public int calculateTipPercentage(List<String> names) {
+        int size = names.size();
+        if (size == 0) {
+            return 0;
+        } else if (size <= 5) {
+            return 10;
+        } else {
+            return 20;
+       }
+
+}
+
