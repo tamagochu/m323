@@ -1,0 +1,28 @@
+// Übung 1: Nur gerade Zahlen behalten
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // [2, 4]
+
+// Übung 2: Namen mit mehr als vier Buchstaben filtern
+const names = ["Alice", "Bob", "Charlie", "Diana"];
+const longNames = names.filter(name => name.length > 4);
+console.log(longNames); // ["Alice", "Charlie", "Diana"]
+
+// Übung 3: Zahlen grösser als 50 filtern
+const numbers2 = [12, 45, 68, 100];
+const largeNumbers = numbers2.filter(num => num > 50);
+console.log(largeNumbers); // [68, 100]
+
+// Übung 4: Wörter filtern, die mit "S" beginnen
+const words = ["Scala", "ist", "fantastisch"];
+const wordsStartingWithS = words.filter(word => word.startsWith("S"));
+console.log(wordsStartingWithS); // ["Scala"]
+
+// Übung 5: Titel von Büchern vor 1950 filtern und extrahieren
+const books = [
+    { titel: "1984", autor: "George Orwell", jahr: 1949 },
+    { titel: "Brave New World", autor: "Aldous Huxley", jahr: 1932 },
+    { titel: "Fahrenheit 451", autor: "Ray Bradbury", jahr: 1953 }
+];
+const oldBookTitles = books.filter(book => book.jahr < 1950).map(book => book.titel);
+console.log(oldBookTitles); // ["1984", "Brave New World"]
