@@ -1,0 +1,16 @@
+// Aufgabe 1: Filter
+
+const gefilterteMitarbeiter = mitarbeiter
+  .filter(m => m.abteilung === "IT" && m.gehalt >= 50000)
+  .map(m => m.name.split(" ")[0].toUpperCase());
+
+console.log(gefilterteMitarbeiter); // Erwartete Ausgabe: ["MAX", "KLAUS"]
+
+// Aufgabe 2: Kursnamen formatieren und sortieren
+
+const gefilterteKurse = kurse
+  .filter(kurs => kurs.includes("Daten"))
+  .map(kurs => kurs.replace(/\s+/g, ""));
+
+console.log(gefilterteKurse.sort()); // Alphabetisch sortiert
+console.log(gefilterteKurse.sort().reverse()); // Umgekehrt alphabetisch sortiert
