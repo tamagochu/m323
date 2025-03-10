@@ -1,0 +1,15 @@
+// Übung 1
+
+val zahlen = List(1, 2, 3, 4, 5)
+val summe = zahlen.foldLeft(0)((sum, x) => sum + x) // Ausgabe: 15
+
+// Übung 2
+val strings = List("Hallo", " ", "Welt", "!")
+val resultat = strings.foldLeft("")((satz, x) => satz + x) // Ausgabe: "Hallo Welt!"
+
+// Übung 3
+val points = List((1, 3), (2, 5), (4, 8), (6, 2))
+
+def tupleaddierer(num1: Int, num2: Int, num3: Int, num4: Int): (Int, Int) = (num1 + num3, num2 + num4)
+
+val schwerpunkt = points.foldLeft(0, 0)((resultat, x) => tupleaddierer(resultat_1, resultat_2, x_1, x_2)) / points.length // Erwartete Ausgabe: (3.25, 4.5)
