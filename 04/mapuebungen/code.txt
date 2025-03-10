@@ -1,0 +1,28 @@
+// Übung 1: Zahlen verdoppeln
+const numbers = [1, 2, 3, 4, 5];
+const doubledNumbers = numbers.map(num => num * 2);
+console.log(doubledNumbers); // [2, 4, 6, 8, 10]
+
+// Übung 2: Namen in Großbuchstaben umwandeln
+const names = ["Alice", "Bob", "Charlie"];
+const upperCaseNames = names.map(name => name.toUpperCase());
+console.log(upperCaseNames); // ["ALICE", "BOB", "CHARLIE"]
+
+// Übung 3: Hälfte jeder Zahl berechnen
+const numbers2 = [12, 45, 68, 100];
+const halfNumbers = numbers2.map(num => num / 2);
+console.log(halfNumbers); // [6, 22.5, 34, 50]
+
+// Übung 4: Formatierte Adressen erstellen
+const addresses = [
+    { strasse: "Hauptstrasse", hausnummer: 10, postleitzahl: "12345", stadt: "Musterstadt" },
+    { strasse: "Nebenstrasse", hausnummer: 5, postleitzahl: "23456", stadt: "Beispielburg" }
+];
+const formattedAddresses = addresses.map(addr => `${addr.strasse} ${addr.hausnummer}, ${addr.postleitzahl} ${addr.stadt}`);
+console.log(formattedAddresses);
+// ["Hauptstrasse 10, 12345 Musterstadt", "Nebenstrasse 5, 23456 Beispielburg"]
+
+// Übung 5: Vornamen in Großbuchstaben extrahieren
+const fullNames = ["Max Mustermann", "Erika Mustermann"];
+const firstNamesUpperCase = fullNames.map(name => name.split(" ")[0].toUpperCase());
+console.log(firstNamesUpperCase); // ["MAX", "ERIKA"]
