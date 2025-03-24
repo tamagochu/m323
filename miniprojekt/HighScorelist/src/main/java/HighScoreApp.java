@@ -21,7 +21,7 @@ class HighScore {
 }
 
 class HighScoreAdmin {
-    private static final List<String> LEVELS = Arrays.asList("Einfach", "Mittel", "Schwer", "Genie");
+    private static final List<String> LEVELS = Arrays.asList("einfach", "mittel", "schwer", "genie");
     private static final int MAX_ENTRIES = 10;
     private static final String FILE_NAME = "highscores.csv";
     private Map<String, List<HighScore>> scores = new HashMap<>();
